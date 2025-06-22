@@ -92,7 +92,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ; :     │
         //    HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SEMI)
-            &kp A      &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L      SEMI
+            &kp A      &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L      &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
@@ -105,7 +105,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  I       │  ;       │
-            &kp Q      &kp W      &kp F      &kp P      &kp B          &kp Y      &kp L      &kp U      &kp I      SEMI
+            &kp Q      &kp W      &kp F      &kp P      &kp B          &kp Y      &kp L      &kp U      &kp I      &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │  O     │
         //    HRML(A,        R,         S,         T)     &kp G          &kp M      HRMR(N,        E,         I,        O)
@@ -126,12 +126,12 @@
             &trans    &kp N1     &kp N2     &kp N3     &kp LWIN        &kp INS    &kp HOME   &kp UP     &kp PG_UP  &kp ESC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  4       │  5       │  6       │ ALT      │   │ DELETE   │ LEFT     │ DOWN     │ RIGHT    │ SHIFTALT │
-            &trans    &kp N4     &kp N5     &kp N6     &kp LALT       &kp DEL    &kp LEFT   &kp DOWN   &kp RIGHT  &kp LS(LALT)
+            &trans    &kp N4     &kp N5     &kp N6     &kp LALT        &kp DEL    &kp LEFT   &kp DOWN   &kp RIGHT  &kp LS(LALT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  7       │  8       │  9       │  0       │   │ CAPS     │ PAGE DN  │          │ PAGE UP  │ CTRLSPC  │
-            &trans    &kp N7     &kp N8     &kp N9     &kp N0         &caps_word &kp PG_DN &trans     &kp PG_UP   &kp LC(SPC)
+            &trans    &kp N7     &kp N8     &kp N9     &kp N0         &caps_word  &kp PG_DN  &trans     &kp PG_UP  &kp LC(SPC)
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans    &trans        &trans     &trans
+                                             &trans    &trans          &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };

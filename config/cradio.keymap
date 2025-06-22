@@ -6,8 +6,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 // Home row mods macro
-#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
-#define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
+//#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
+//#define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
 
 / {
     behaviors {
@@ -63,13 +63,13 @@
         combo_leftparenthesis {
             timeout-ms = <50>;
             layers = <0 1>;
-            key-positions = <21 22>;
+            key-positions = <22 23>;
             bindings = <&kp KP_LPAR>;
         };
         combo_rightparenthesis {
             timeout-ms = <50>;
             layers = <0 1>;
-            key-positions = <27 28>;
+            key-positions = <26 27>;
             bindings = <&kp KP_RPAR>;
         };
     };
@@ -91,7 +91,8 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ; :     │
-            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SEMI)
+        //    HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SEMI)
+            &kp A      &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L      SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
@@ -103,14 +104,15 @@
         colemakdh_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
+        //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  I       │  ;       │
+            &kp Q      &kp W      &kp F      &kp P      &kp B          &kp Y      &kp L      &kp U      &kp I      SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ; :     │
-            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SEMI)
+        //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │  O     │
+        //    HRML(A,        R,         S,         T)     &kp G          &kp M      HRMR(N,        E,         I,        O)
+            &kp A      &kp R      &kp S      &kp T      &kp G          &kp M      &kp N      &kp E      &kp I      &kp O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+        //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
+            &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                        &lt 3 TAB   &mt LCTRL SPACE     &mt LSHFT ENTER  &lt 2 BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -120,16 +122,16 @@
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ INSERT   │  1       │  2       │  3       │          │   │          │ HOME     │ PAGE DN  │ PAGE UP  │ END      │
-            &kp INS    &kp N1     &kp N2     &kp N3     &trans         &trans     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
+        //│          │  1       │  2       │  3       │ WIN      │   │ INSERT   │ HOME     │ UP       │ END      │ ESC      │
+            &trans    &kp N1     &kp N2     &kp N3     &kp LWIN        &kp INS    &kp HOME   &kp UP     &kp PG_UP  &kp ESC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ DELETE   │  4       │  5       │  6       │          │   │          │ LEFT     │ DOWN     │ UP       │ RIGHT    │
-            &kp DEL    &kp N4     &kp N5     &kp N6     &trans         &trans     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
+        //│ LAYER0   │  4       │  5       │  6       │ ALT      │   │ DELETE   │ LEFT     │ DOWN     │ RIGHT    │ SHIFTALT │
+            &to 0     &kp N4     &kp N5     &kp N6     &kp LALT       &kp DEL    &kp LEFT   &kp DOWN   &kp RIGHT  &LS(LALT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-           &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &trans     &trans     &trans     &trans     &trans
+        //│ LAYER1   │  7       │  8       │  9       │  0       │   │ CAPS     │ PAGE DN  │          │ PAGE UP  │ CTRLSPC  │
+            &to 1     &kp N7     &kp N8     &kp N9     &kp N0         &caps_word &kp PG_DN &trans     &kp PG_UP   &LC(SPC)
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp ESC    &trans        &trans     &trans
+                                             &trans    &trans        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };

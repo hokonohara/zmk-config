@@ -22,10 +22,38 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+        combo_copy {
+            timeout-ms = <50>;
+            layer = default_layer;
+            key-positions = <10 11>;
+            bindings = <&kp LC(C)>;
+        };
+        combo_paste {
+            timeout-ms = <50>;
+            layer = default_layer;
+            key-positions = <11 12>;
+            bindings = <&kp LC(V)>;
+        };
+        combo_leftbrace {
+            timeout-ms = <50>;
+            layer = default_layer;
+            key-positions = <20 21>;
+            bindings = <&kp LBRC>;
+        };
+        combo_rightbrace {
+            timeout-ms = <50>;
+            layer = default_layer;
+            key-positions = <11 12>;
+            bindings = <&kp RBRC>;
+        };
+    };
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <1 2>;
+            if-layers = <28 29>;
             then-layer = <3>;
         };
     };

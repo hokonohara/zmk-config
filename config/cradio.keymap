@@ -139,11 +139,11 @@
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ `        │  '       │  ^       │ "        │ ~        │   │ !        │ (        │ )        │          │ WIN      │
-            &kp GRAVE   &kp APOS   &kp CARET  &kp SQT   &kp TILDE      &kp EXCL   &kp LBRC  &kp RBRC   &kp trans  &sk LWIN
+        //│ `        │ '        │ ^        │ "        │ ~        │   │ !        │ (        │ )        │          │ WIN      │
+            &kp GRAVE  &kp APOS   &kp CARET  &kp SQT    &kp TILDE      &kp EXCL   &kp LBRC   &kp RBRC   &trans     &sk LWIN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ \        │ *        │  =       │ _        │ $        │   │  #       │ [        │ ]        │          │ ALT      │
-            &kp BSLH   &kp ASTRK  &kp EQUAL  &kp UNDER  &kp DLLR      &kp HASH   &kp LBKT   &kp RBKT  &kp trans   &sk LALT
+            &kp BSLH   &kp ASTRK  &kp EQUAL  &kp UNDER  &kp DLLR      &kp HASH   &kp LBKT    &kp RBKT   &trans     &sk LALT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ +        │ |        │ @        │ -        │ %        │   │  &       │ {        │ }        │ LAYER1   │ LAYER0   │
             &kp PLUS   &kp PIPE  &kp AT      &kp MINUS  &kp PRCNT       &kp AMPS  &kp LS(N9) &kp LS(N0) &to 1      &to 0

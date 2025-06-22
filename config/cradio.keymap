@@ -64,13 +64,13 @@
             timeout-ms = <50>;
             layers = <0 1>;
             key-positions = <22 23>;
-            bindings = <&kp KP_LPAR>;
+            bindings = <&kp LS(N9)>;
         };
         combo_rightparenthesis {
             timeout-ms = <50>;
             layers = <0 1>;
             key-positions = <26 27>;
-            bindings = <&kp KP_RPAR>;
+            bindings = <&kp LS(N0)>;
         };
     };
 
@@ -129,7 +129,7 @@
             &trans    &kp N4     &kp N5     &kp N6     &kp LALT        &kp DEL    &kp LEFT   &kp DOWN   &kp RIGHT  &kp LS(LALT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  7       │  8       │  9       │  0       │   │ CAPS     │ PAGE DN  │          │ PAGE UP  │ CTRLSPC  │
-            &trans    &kp N7     &kp N8     &kp N9     &kp N0         &caps_word  &kp PG_DN  &trans     &kp PG_UP  &kp LC(SPC)
+            &trans    &kp N7     &kp N8     &kp N9     &kp N0         &caps_word  &kp PG_DN  &trans     &kp PG_UP  &kp LC(SPACE)
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans    &trans          &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯

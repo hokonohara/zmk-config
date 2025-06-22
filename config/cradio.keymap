@@ -26,49 +26,49 @@
         compatible = "zmk,combos";
         combo_copy {
             timeout-ms = <50>;
-            layers = <0,1>;
+            layers = <0 1>;
             key-positions = <10 11>;
             bindings = <&kp LC(C)>;
         };
         combo_paste {
             timeout-ms = <50>;
-            layers = <0,1>;
+            layers = <0 1>;
             key-positions = <11 12>;
             bindings = <&kp LC(V)>;
         };
         combo_leftbrace {
             timeout-ms = <50>;
-            layers = <0,1>;
+            layers = <0 1>;
             key-positions = <20 21>;
             bindings = <&kp LBRC>;
         };
         combo_rightbrace {
             timeout-ms = <50>;
-            layers = <0,1>;
+            layers = <0 1>;
             key-positions = <28 29>;
             bindings = <&kp RBRC>;
         };
         combo_leftbracket {
             timeout-ms = <50>;
-            layers = <0,1>;
+            layers = <0 1>;
             key-positions = <21 22>;
             bindings = <&kp LBRK>;
         };
         combo_rightbracket {
             timeout-ms = <50>;
-            layers = <0,1>;
+            layers = <0 1>;
             key-positions = <27 28>;
             bindings = <&kp RBRK>;
         };
         combo_leftparenthesis {
             timeout-ms = <50>;
-            layers = <0,1>;
+            layers = <0 1>;
             key-positions = <21 22>;
             bindings = <&kp KP_LPAR>;
         };
         combo_rightparenthesis {
             timeout-ms = <50>;
-            layers = <0,1>;
+            layers = <0 1>;
             key-positions = <27 28>;
             bindings = <&kp KP_RPAR>;
         };

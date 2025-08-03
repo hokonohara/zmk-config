@@ -207,8 +207,8 @@
            &trans       &trans          &trans       &trans         &trans            &trans     &trans       &trans       &trans     &trans
         //├────────────┼───────────────┼────────────┼──────────────┼─────────────┤   ├──────────┼────────────┼────────────┼──────────┼──────────┤
         //│ PROFILE 0  │ PROFILE 1     │ PROFILE 2  │              │             │   │          │ RGB TOG    │ RGB FWD    │ RGB REV  │          │
-        //  &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2  &trans        &kp LC(LA(DEL))    &trans     &kp RGB_TOG  &kp RGB_EFF &kp RGB_EFR &trans
-           &trans       &trans          &trans       &trans         &trans            &trans     &trans       &trans       &trans     &trans
+          &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2  &trans        &kp LC(LA(DEL))    &trans     &kp RGB_TOG  &kp RGB_EFF &kp RGB_EFR &trans
+        //   &trans       &trans          &trans       &trans         &trans            &trans     &trans       &trans       &trans     &trans
         //╰────────────┴───────────────┴────────────┼──────────────┼─────────────┤   ├──────────┼────────────┼────────────┴──────────┴──────────╯
         //                                          │              │             │   │          │            │
                                                      &trans         &trans            &trans     &trans

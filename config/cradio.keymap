@@ -112,8 +112,8 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-        //                                 │  LYM/SPC │ CTL/TAB  │   │ SFT/RET  │ LYS/BSPC  │
-                                       &lt LYM SPACE   &mt LCTRL TAB  &mt LSHFT ENTER  &lt LYS BSPC
+        //                                 │  LYS/SPC │ CTL/TAB  │   │ SFT/RET  │ LYM/BSPC  │
+                                       &lt LYS SPACE   &mt LCTRL TAB  &mt LSHFT ENTER  &lt LYM BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };

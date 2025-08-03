@@ -201,7 +201,7 @@
            &sys_reset  &bootloader      &trans       &trans        &kp LS(LG(S))      &to LYD    &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &trans
         //├────────────┼───────────────┼────────────┼──────────────┼─────────────┤   ├──────────┼────────────┼────────────┼──────────┼──────────┤
         //│ BT CLEAR   │ BT CLR ALL    │            │              │             │   │ LAYER1   │ PREV       │ PLAY       │ NEXT     │          │
-           &bt BT_CLR  &bt BT_CLR_ALL  &bt BT_NXT    &bt BT_PRV    &kp LS(LG(R))      &to LYA    &kp C_PREV   &kp C_PLAY   &kp C_NXT  &trans
+           &bt BT_CLR  &bt BT_CLR_ALL  &bt BT_NXT    &bt BT_PRV    &kp LS(LG(R))      &to LYA    &kp C_PREV   &kp C_PLAY   &kp C_NEXT &trans
         //├────────────┼───────────────┼────────────┼──────────────┼─────────────┤   ├──────────┼────────────┼────────────┼──────────┼──────────┤
         //│ PROFILE 0  │ PROFILE 1     │ PROFILE 2  │              │             │   │          │ RGB TOG    │ RGB FWD    │ RGB REV  │          │
           &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2  &trans        &kp LC(LA(DEL))    &trans     &kp RGB_TOG  &kp RGB_EFF &kp RGB_EFR &trans

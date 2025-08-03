@@ -199,8 +199,8 @@
             bindings = <
         //╭────────────┬───────────────┬────────────┬──────────────┬─────────────╮   ╭──────────┬────────────┬────────────┬──────────┬──────────╮
         //│ RESET      │ BOOTLOADER    │            │              │             │   │ LAYER0   │ VOL DOWN   │ VOL UP     │ MUTE     │          │
-        //   &sys_reset  &bootloader      &trans       &trans        &kp LS(LG(S))      &to LYD    &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &trans
-           &trans       &trans          &trans       &trans         &trans            &trans     &trans       &trans       &trans     &trans
+           &sys_reset  &bootloader      &trans       &trans        &kp LS(LG(S))      &to LYD    &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &trans
+        //   &trans       &trans          &trans       &trans         &trans            &trans     &trans       &trans       &trans     &trans
         //├────────────┼───────────────┼────────────┼──────────────┼─────────────┤   ├──────────┼────────────┼────────────┼──────────┼──────────┤
         //│ BT CLEAR   │ BT CLR ALL    │            │              │             │   │ LAYER1   │ PREV       │ PLAY       │ NEXT     │          │
         // &bt BT_CLR  &bt BT_CLR_ALL  &bt BT_NXT    &bt BT_PRV    &kp LS(LG(R))      &to LYA    &kp C_PREV   &kp C_PLAY   &kp C_NEXT &trans

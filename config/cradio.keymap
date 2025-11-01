@@ -38,7 +38,7 @@
     combos {
         compatible = "zmk,combos";
         // A+S -> Ctrl-Z
-        combo_copy {
+        combo_cut {
             timeout-ms = <50>;
             layers = <0 1>;
             key-positions = <10 11>;
@@ -140,7 +140,7 @@
         //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  ;       │
             &kp Q      &kp W      &kp F      &kp P      &kp B          &kp Y      &kp L      &kp U      &kp Y      &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │  O       │
+        //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │  L2/ O       │
         //    HRML(A,        R,         S,         T)     &kp G          &kp M      HRMR(N,        E,         I,        O)
             &kp A      &kp R      &kp S      &kp T      &kp G          &kp M      &kp N      &kp E      &kp I      &lt LYN O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤

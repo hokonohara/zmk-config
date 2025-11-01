@@ -37,33 +37,40 @@
 
     combos {
         compatible = "zmk,combos";
-        // A+S -> Ctrl-C
+        // A+S -> Ctrl-Z
         combo_copy {
             timeout-ms = <50>;
             layers = <0 1>;
             key-positions = <10 11>;
-            bindings = <&kp LC(C)>;
+            bindings = <&kp LC(Z)>;
         };
-        // S+D -> Ctrl-V
+        // S+D -> Ctrl-C
         combo_paste {
             timeout-ms = <50>;
             layers = <0 1>;
             key-positions = <11 12>;
+            bindings = <&kp LC(C)>;
+        };
+        // D+F -> Ctrl-V
+        combo_paste {
+            timeout-ms = <50>;
+            layers = <0 1>;
+            key-positions = <12 13>;
             bindings = <&kp LC(V)>;
         };
-        // Z+X -> {
+        // Z+X -> (
         combo_leftbrace {
             timeout-ms = <50>;
             layers = <0 1>;
             key-positions = <20 21>;
-            bindings = <&kp LBRC>;
+            bindings = <&kp LS(N9)>;
         };
-        // >+? -> }
+        // >+? -> )
         combo_rightbrace {
             timeout-ms = <50>;
             layers = <0 1>;
             key-positions = <28 29>;
-            bindings = <&kp RBRC>;
+            bindings = <&kp LS(N0)>;
         };
         // X+C -> [
         combo_leftbracket {
@@ -79,19 +86,19 @@
             key-positions = <27 28>;
             bindings = <&kp RBKT>;
         };
-        // C+V -> (
+        // C+V -> {
         combo_leftparenthesis {
             timeout-ms = <50>;
             layers = <0 1>;
             key-positions = <22 23>;
-            bindings = <&kp LS(N9)>;
+            bindings = <&kp LBRC>;
         };
-        // M+< -> )
+        // M+< -> }
         combo_rightparenthesis {
             timeout-ms = <50>;
             layers = <0 1>;
             key-positions = <26 27>;
-            bindings = <&kp LS(N0)>;
+            bindings = <&kp RBRC>;
         };
     };
 
@@ -106,7 +113,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        // LAYER 0
+        // LAYER 0 (DEFAULT)
         default_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
@@ -126,7 +133,7 @@
             >;
         };
 
-        // LAYER 1
+        // LAYER 1 (COLEMAKDH)
         colemakdh_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
@@ -146,7 +153,7 @@
             >;
         };
 
-        // LAYER 2
+        // LAYER 2 (NUM & FUNC)
         num_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
@@ -165,7 +172,7 @@
             >;
         };
 
-        // LAYER 3
+        // LAYER 3 (SYMBOL)
         symbol_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
@@ -183,7 +190,7 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
-        // LAYER 4
+        // LAYER 4 (NAVIGATION)
         navigation_layer {
             bindings = <
         //╭──────────┬───────────────┬───────────────┬───────────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
@@ -202,7 +209,7 @@
             >;
         };
 
-        // LAYER 5
+        // LAYER 5 (COMBO)
         combo_layer {
             bindings = <
         //╭────────────┬───────────────┬────────────┬──────────────┬─────────────╮   ╭──────────┬────────────────┬────────────────┬──────────────┬────────────╮

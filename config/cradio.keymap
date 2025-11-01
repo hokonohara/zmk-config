@@ -42,7 +42,7 @@
             timeout-ms = <50>;
             layers = <0 1>;
             key-positions = <10 11>;
-            bindings = <&kp LC(Z)>;
+            bindings = <&kp LC(X)>;
         };
         // S+D -> Ctrl-C
         combo_copy {
@@ -158,13 +158,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │  F7      │  F8      │  F9      │  F10     │   │          │  7       │  8       │  9       │          │
-            &trans    &kp F7     &kp F8     &kp F9     &kp F10        &trans    &kp N7     &kp N8     &kp N9      &trans   
+            &trans    &kp F7     &kp F8     &kp F9     &kp F10        &trans    &kp N7     &kp N8     &kp N9      &kp LS(LG(S))   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  F4      │  F5      │  F6      │  F11     │   │          │  4       │  5       │  6       │          │
             &trans    &kp F4     &kp F5     &kp F6     &kp F11        &trans    &kp N4     &kp N5     &kp N6      &trans   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  F1      │  F2      │  F3      │  F12     │   │          │  1       │  2       │  3       │          │
-            &trans    &kp F1     &kp F2     &kp F3     &kp F12        &trans    &kp N1     &kp N2     &kp N3      &trans   
+            &trans    &kp F1     &kp F2     &kp F3     &kp F12        &trans    &kp N1     &kp N2     &kp N3      &kp LS(LG(R))   
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                 │          │          │   │          │  0       │
                                              &trans    &trans          &trans    &kp N0    
@@ -186,7 +186,7 @@
             &kp PIPE   &kp AT     &kp AMPS   &kp DLLR  &kp PRCNT       &kp CARET  &kp LS(N9) &kp LS(N0) &trans     &sk LCTRL
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                 │          │          │   │          │          │
-                                             &trans     &trans         &trans     &trans
+                                             &trans     &trans         &kp LC(LA(LEFT))   &kp LC(LA(RIGHT))
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -195,16 +195,16 @@
             bindings = <
         //╭──────────┬───────────────┬───────────────┬───────────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │               │               │               │          │   │ DELETE   │ HOME     │ UP       │ END      │ ESC      │
-            &trans    &trans          &mmv MOVE_UP    &trans          &mkp MB1       &kp DEL    &kp HOME   &kp UP     &kp END    &kp ESC
+            &trans    &trans          &mmv MOVE_UP    &trans          &trans         &kp DEL    &kp HOME   &kp UP     &kp END    &kp ESC
         //├──────────┼───────────────┼───────────────┼───────────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │               │               │               │          │   │ INSERT   │ LEFT     │ DOWN     │ RIGHT    │ SHIFTALT │
-            &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &mkp MB2       &kp INS    &kp LEFT   &kp DOWN   &kp RIGHT  &kp LS(LALT)
+            &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &trans         &kp INS    &kp LEFT   &kp DOWN   &kp RIGHT  &kp LS(LALT)
         //├──────────┼───────────────┼───────────────┼───────────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │               │               │               │          │   │ CAPS     │ PAGE DN  │ LGUITAB  │ PAGE UP  │ CTRLSPC  │
-            &trans    &msc SCRL_UP    &trans          &msc SCRL_DOWN  &mkp MB3       &caps_word  &kp PG_DN  &kp LG(TAB) &kp PG_UP  &kp LC(SPACE)
+            &kp LC(LA(DEL)) &msc SCRL_UP  &trans      &msc SCRL_DOWN  &mkp MB3       &caps_word  &kp PG_DN  &kp LG(TAB) &kp PG_UP  &kp LC(SPACE)
         //╰──────────┴───────────────┴───────────────┼───────────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                           │               │          │   │          │          │
-                                                      &trans          &trans         &trans     &trans
+                                                      &mkp MB1        &mkp MB2       &trans     &trans
         //                                           ╰───────────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -214,10 +214,10 @@
             bindings = <
         //╭────────────┬───────────────┬────────────┬──────────────┬─────────────╮   ╭──────────┬────────────────┬────────────────┬──────────────┬────────────╮
         //│ RESET      │               │            │              │             │   │ LAYER0   │ VOL DOWN       │ VOL UP         │ MUTE         │ RESET      │
-           &sys_reset   &trans          &trans       &trans        &kp LS(LG(S))      &to LYD    &kp C_VOL_DN     &kp C_VOL_UP     &kp C_MUTE     &sys_reset
+           &sys_reset   &trans          &trans       &trans        &trans             &to LYD    &kp C_VOL_DN     &kp C_VOL_UP     &kp C_MUTE     &sys_reset
         //├────────────┼───────────────┼────────────┼──────────────┼─────────────┤   ├──────────┼────────────────┼────────────────┼──────────────┼────────────┤
         //│ BOOTLOADER │               │            │              │             │   │ LAYER1   │ PREV           │ PLAY           │ NEXT         │ BOOTLOADER │
-           &bootloader  &trans          &bt BT_NXT   &bt BT_PRV    &kp LS(LG(R))      &to LYA    &kp C_PREV       &kp C_PLAY       &kp C_NEXT     &bootloader
+           &bootloader  &trans          &bt BT_NXT   &bt BT_PRV    &trans             &to LYA    &kp C_PREV       &kp C_PLAY       &kp C_NEXT     &bootloader
         //├────────────┼───────────────┼────────────┼──────────────┼─────────────┤   ├──────────┼────────────────┼────────────────┼──────────────┼────────────┤
         //│ PROFILE 0  │ PROFILE 1     │ PROFILE 2  │ BT CLR ALL   │             │   │          │ RGB TOG        │ RGB FWD        │ RGB REV      │            │
           &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_CLR_ALL &kp LC(LA(DEL))   &trans    &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR &trans

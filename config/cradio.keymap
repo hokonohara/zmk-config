@@ -187,7 +187,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ !        │ #        │ *        │ "        │ '        │   │ ~        │          │ (        │ )        │          │
-            &kp EXCL   &kp HASH   &kp ASTRK  &kp SQT    &kp APOS       &kp TILDE  &trans     &kp LS(N9) &kp LS(N0) &trans
+            &kp EXCL   &kp HASH   &kp ASTRK  &kp DQT    &kp APOS       &kp TILDE  &trans     &kp LS(N9) &kp LS(N0) &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ |        │ +        │ -        │ =        │ _        │   │ `        │          │ [        │ ]        │          │
             &kp PIPE   &kp PLUS   &kp MINUS  &kp EQUAL  &kp UNDER      &kp GRAVE  &trans     &kp LBKT   &kp RBKT   &trans

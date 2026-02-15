@@ -176,17 +176,17 @@
         symbol_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ !        │ #        │ *        │ "        │ '        │   │ ~        │ (        │ )        │          │ OSM WIN  │
-            &kp EXCL   &kp HASH   &kp ASTRK  &kp SQT    &kp APOS       &kp TILDE  &kp LS(N9) &kp LS(N0) &trans    &sk LWIN
+        //│ !        │ #        │ *        │ "        │ '        │   │ ~        │          │ (        │ )        │ OSM WIN  │
+            &kp EXCL   &kp HASH   &kp ASTRK  &kp SQT    &kp APOS       &kp TILDE  &trans     &kp LS(N9) &kp LS(N0) &sk LWIN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ |        │ +        │ -        │ =        │ _        │   │ `        │ [        │ ]        │          │ OSM ALT  │
-            &kp PIPE   &kp PLUS   &kp MINUS  &kp EQUAL  &kp UNDER      &kp GRAVE &kp LBKT    &kp RBKT   &trans    &sk LALT
+        //│ |        │ +        │ -        │ =        │ _        │   │ `        │          │ [        │ ]        │ OSM ALT  │
+            &kp PIPE   &kp PLUS   &kp MINUS  &kp EQUAL  &kp UNDER      &kp GRAVE  &trans     &kp LBKT   &kp RBKT   &sk LALT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ \        │ @        │ &        │ $        │ %        │   │ ^        │ {        │ }        │          │ OSM CTL  │
-            &kp BSLH   &kp AT     &kp AMPS   &kp DLLR  &kp PRCNT       &kp CARET  &kp LBRC   &kp RBRC   &trans    &sk LCTRL
+        //│ \        │ @        │ &        │ $        │ %        │   │ ^        │          │ {        │ }        │ OSM CTL  │
+            &kp BSLH   &kp AT     &kp AMPS   &kp DLLR  &kp PRCNT       &kp CARET  &trans     &kp LBRC   &kp RBRC   &sk LCTRL
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                 │          │          │   │          │          │
-                                             &trans     &trans         &trans   &trans
+                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
